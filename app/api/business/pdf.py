@@ -15,9 +15,11 @@ class PDF:
                 "Junio", "Julio", "Agosto", "Septiembre",
                 "Octubre", "Noviembre", "Diciembre")
         if tipo == "inicio":
-            return 'el día {} de {} del {}'.format(now.day, months[now.month - 1], now.year)
+            #return 'el día {} de {} del {}'.format(now.day, months[now.month - 1], now.year)
+            return 'el día 10 de diciembre 2020'
         if tipo == "final":
-            return 'el día {} de {} del {}'.format(now.day, months[now.month - 1], now.year + 1)
+            #return 'el día {} de {} del {}'.format(now.day, months[now.month - 1], now.year + 1)
+            return 'el 10 de diciembre del 2021'
 
     def text(self, data):
 
@@ -97,7 +99,7 @@ class PDF:
             epw = pdf.w - pdf.l_margin - pdf.r_margin
             pdf.multi_cell(epw, th, PDF.text(self, data))
             pdf.output('api/business/contrato_arrendamiento.pdf', 'F')
-            # Email.sendEmail(self, data)
+            #Email.sendEmail(self, data)
             return True
         except Exception as error:
             print(error)

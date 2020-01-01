@@ -62,7 +62,7 @@ CUARTA.- DEL PRECIO  Los contratantes pactan de común acuerdo que 'EL ARRENDATA
 
 Así mismo 'EL ARRENDATARIO' se obliga a pagar a su costa la cuota de mantenimiento correspondiente a '${TIPO_INMUEBLE}', la cual corresponde al REQUERIDO POR EL USO DEL INMUEBLE. Además 'EL ARRENDATARIO' pagará a su costa, los servicios correspondientes a '${TIPO_INMUEBLE}' tales como electricidad, agua, gas, teléfono, internet, entre otros. 
 
-'EL ARRENDATARIO' entregó con anterioridad a este acto a 'EL ARRENDADOR' la cantidad equivalente ${PRECIO_DEPOSITO} por concepto de deposito en garantía (previa presentación y entrega del recibo correspondiente) se devolverá a 'EL ARRENDATARIO' sin intereses si se actualizan los siguientes supuestos:
+'EL ARRENDATARIO' entregó con anterioridad a este acto a 'EL ARRENDADOR' la cantidad equivalente ${PRECIO_DEPOSITO} pesos mexicanos por concepto de deposito en garantía (previa presentación y entrega del recibo correspondiente) se devolverá a 'EL ARRENDATARIO' sin intereses si se actualizan los siguientes supuestos:
 
 a) Que se encuentre al corriente del pago de rentas con 'EL ARRENDADOR'; 
 b) Que entregue el inmueble completamente desocupado a 'EL ARRENDADOR' en el mismo estado en que lo recibió y con todos sus accesorios. Si 'EL ARRENDATARIO' causara algún daño o desperfecto en los accesorios de la finca arrendada el deposito se utilizará en su reparación; Es requisito indispensable para la devolución del deposito que 'EL ARRENDATARIO' entregue a 'EL ARRENDADOR' los comprobantes de luz, agua, teléfono, gas, cuotas de mantenimiento y demás servicios completamente pagados y finiquitados donde se exprese claramente por dichas compañías que no existen adeudos con ellas, cumpliéndose lo anterior, el depósito será devuelto, posteriores a la entrega del inmueble. 
@@ -204,6 +204,10 @@ VIGÉSIMA CUARTA.- DE LA COMPETENCIA Y JURISDICCIÓN
 Para todo lo relativo a la interpretación y cumplimiento del presente contrato, las partes se someten a la jurisdicción y competencia de los tribunales de la ciudad de Bucerías, Municipio de Bahía de Banderas, Nayarit, renunciando a cualquier otro fuero presente o futuro que en razón de su domicilio pudiera corresponderles.
 
 Leído que fue por las partes el presente contrato y bien enteradas de su valor y fuerza legal, lo firman en el municipio de Bahía de Banderas, Nayarit,
+
+NOTA : ESTE CONTRATO NO SERA RENOVADO, POR LO TANTO EL INMUEBLE DEBE SER DE DESOCUPADO EN LA FECHA DE FINALIZACION DEL DOCUMENTO MENCIONADO
+
+
 
 
 
