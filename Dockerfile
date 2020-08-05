@@ -10,7 +10,7 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app /app 
 
-RUN addUser -D addUser
+RUN adduser -D user
 USER user 
 
 
