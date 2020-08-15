@@ -1,9 +1,10 @@
-#DRF
+# DRF
 from rest_framework import serializers
 
-#Models
+# Models
 
-from .models import Owner , Pet , Service , Contract , Estate , Property , LandLord , Pay
+from .models import Owner, Pet, Service, \
+                    Contract, Estate, Property, LandLord, Pay
 
 
 class OwnerSerializer(serializers.ModelSerializer):
@@ -12,11 +13,13 @@ class OwnerSerializer(serializers.ModelSerializer):
         model = Owner
         fields = "__all__"
 
+
 class PetSerializer(serializers.ModelSerializer):
     """Pet model serializer"""
     class Meta:
         model = Pet
         fields = "__all__"
+
 
 class ServiceSerializer(serializers.ModelSerializer):
     """Service model serializer"""
@@ -24,11 +27,13 @@ class ServiceSerializer(serializers.ModelSerializer):
         model = Service
         fields = "__all__"
 
+
 class EstateSerializer(serializers.ModelSerializer):
     """Estate model serializer"""
     class Meta:
         model = Estate
         fields = "__all__"
+
 
 class PropertySerializer(serializers.ModelSerializer):
     """Property model serializer"""
@@ -36,11 +41,13 @@ class PropertySerializer(serializers.ModelSerializer):
         model = Property
         fields = "__all__"
 
+
 class LandLordSerializer(serializers.ModelSerializer):
     """LandLord model serializer"""
     class Meta:
         model = LandLord
         fields = "__all__"
+
 
 class PaySerializer(serializers.ModelSerializer):
     """Pay Serializers"""
@@ -48,9 +55,9 @@ class PaySerializer(serializers.ModelSerializer):
         model = Pay
         fields = "__all__"
 
+
 class ContractSerializer(serializers.ModelSerializer):
     """Contract model serializer"""
     class Meta:
         model = Contract
         fields = "__all__"
-
