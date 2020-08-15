@@ -126,7 +126,7 @@ class Contract(models.Model):
     PORCENTAJE_AUMENTO = models.CharField(max_length=3)
     DIRRECCION_ARRENDADOR = models.CharField(max_length=500)
 
-    buildContract()
+    #buildContract()
 
     def __str__(self):
         """Return Arrendatario nombre"""
