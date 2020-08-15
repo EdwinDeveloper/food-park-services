@@ -1,0 +1,240 @@
+                                CONTRATO DE ARRENDAMIENTO
+
+Contrato de Arrendamiento de bien inmueble que celebran por una parte el     SR. ${NOMBRE_ARRENDADOR} propietario. ARRENDADOR, y por la otra parte, SR. ARRENDATARIO, representada por el señor(a) ${NOMBRE_ARRENDATARIO}, a quien en lo sucesivo del presente acuerdo de voluntades se le denominará 'EL ARRENDATARIO', quienes se sujetan al tenor de las siguientes declaraciones y cláusulas.
+
+DECLARACIONES
+
+Declara 'EL ARRENDADOR':
+
+I. Ser una sociedad mercantil debidamente constituida conforme a las leyes mexicanas, según consta en escritura pública en Tepic, Nayarit
+
+II. Que se encuentra inscrita ante el Registro Federal de Contribuyentes bajo la clave peos730725
+
+III. Que su representante cuenta con la capacidad legal necesaria para obligar a su representado en los términos del presente contrato y que a la fecha no le ha sido revocado ni limitado su nombramiento.
+
+IV. Que cuenta con la facultad suficiente para conceder el uso o goce del inmueble destinado a ${TIPO_INMUEBLE}, marcado con el número 32 ubicado en Avenida Tepic Puerto Vallarta,  Mezcales Bahía de Banderas, Nayarit. (En lo sucesivo '${TIPO_INMUEBLE}' Que tiene interés en celebrar el presente contrato con 'EL ARRENDATARIO', con el objeto de dar en arrendamiento ${TIPO_INMUEBLE} descrito con anterioridad.
+
+Declara 'EL ARRENDATARIO':
+
+I. Que su nombre / denominación social es el que ha quedado asentado, que viene por su propio derecho y/o representado por, quien cuenta con las facultades suficientes para celebrar el presente contrato en nombre de EL ARRENDATARIO y obligarlo en términos del mismo, y que dichas facultades no le han sido revocadas ni limitadas en forma alguna y que acredita su personalidad y la de su representada.
+
+II. Ser mayor de edad,  y contar con la capacidad requerida para la celebración del presente acto jurídico.
+
+
+
+
+III. Que tiene interés en celebrar el presente contrato de arrendamiento con 
+'EL ARRENDADOR' sobre el inmueble descrito en la declaración III de 'EL ARRENDADOR' del presente acuerdo de voluntades.
+
+IV. Que conoce plenamente las condiciones, medidas y ubicación de "${TIPO_INMUEBLE}" objeto del contrato y que está en posibilidades físicas, técnicas y económicas, contando con la experiencia personal suficiente y capacitado, así como que dispone de los medios necesarios económicos para tomarlo en arrendamiento.
+
+V. Que acepta sujetarse al Reglamento del contrato.
+
+Declaran 'LAS PARTES':
+
+I. Que se reconocen expresamente la personalidad con la que comparecen.
+
+II. Que basándose en las anteriores declaraciones, sujetan este acto jurídico a las siguientes:
+
+C L Á U S U L A S
+
+PRIMERA.- DEL OBJETO DEL CONTRATO.
+
+'EL ARRENDADOR' otorga y entrega en arrendamiento a 'EL ARRENDATARIO' ${TIPO_INMUEBLE} marcado con ${DIRECCION_INMUEBLE}. Se considera que dicho ${TIPO_INMUEBLE} cuenta con una superficie de 48 metros cuadrados.
+
+'EL ARRENDATARIO' recibe '${TIPO_INMUEBLE}' reconociendo que se encuentra en perfectas condiciones, habiendo verificado que todas sus instalaciones funcionan correctamente a su entera y total satisfacción.
+
+SEGUNDA.- USO DEL INMUEBLE.
+
+'EL ARRENDATARIO' se obliga a destinar "${TIPO_INMUEBLE}" objeto de este contrato única y exclusivamente para la o el servicio ofrecido por el arrendador , ${SERVICIO_A_OFRECER} obligándose 'EL ARRENDATARIO' a no utilizar "${TIPO_INMUEBLE}" para otros usos que no sean los estipulados en la presente cláusula.
+
+TERCERA.- DE LA DURACIÓN
+
+El contrato tendrá una duración especifica obligatorios para ambas partes comenzando a surtir efecto el día de la firma del 'ACTA DE ENTREGA', la cual se contempla se firme ${FECHA_INICIO}, concluyendo el contrato ${FECHA_FINAL} día en que 'EL ARRENDATARIO' se obliga a entregar a 'EL ARRENDADOR' la posesión material y jurídica de '${TIPO_INMUEBLE}' objeto de este contrato en el mismo buen estado en que lo recibe, junto con sus frutos, mejoras y accesorios.
+
+'EL ARRENDATARIO' se obliga a pagar a 'EL ARRENDADOR' una cantidad mensual igual a la pactada en la cláusula cuarta del presente contrato más una pena convencional del 99.99% de incremento por concepto de renta mensual, si a la fecha de terminación del presente contrato, no se hubiere celebrado un nuevo contrato de arrendamiento, y 'EL ARRENDATARIO' no hubiere desocupado y entregado la posesión material y jurídica de '${TIPO_INMUEBLE}' a 'EL ARRENDADOR'; esto es, la renta que deberá pagar durante los meses que no desocupe '${TIPO_INMUEBLE}' será de un 99.99% más a la establecida en el último contrato, sin menoscabo de que 'EL ARRENDADOR' demande la declaración de terminación del Contrato y la desocupación correspondiente.
+
+En caso de que 'EL ARRENDATARIO' no celebre un nuevo contrato de arrendamiento, le permitirá a 'EL ARRENDADOR' colocar anuncios o letreros donde se ponga a disposición '${TIPO_INMUEBLE}'.
+
+Queda expresamente establecido que cuando no celebre un nuevo contrato de arrendamiento, aún cuando se encuentre al corriente de pago de las rentas, las partes renuncian al derecho de prorroga que establece el artículo 1857 del Código Civil para el Estado de Nayarit.
+
+CUARTA.- DEL PRECIO  Los contratantes pactan de común acuerdo que 'EL ARRENDATARIO' pagará a 'EL ARRENDADOR', por concepto de renta mensual por el uso de '${TIPO_INMUEBLE}' descrito en la cláusula primera, la cantidad de ${PRECIO_INMUEBLE}**PESOS mensuales, más el Impuesto al Valor Agregado del 16%.
+
+Así mismo 'EL ARRENDATARIO' se obliga a pagar a su costa la cuota de mantenimiento correspondiente a '${TIPO_INMUEBLE}', la cual corresponde al REQUERIDO POR EL USO DEL INMUEBLE. Además 'EL ARRENDATARIO' pagará a su costa, los servicios correspondientes a '${TIPO_INMUEBLE}' tales como electricidad, agua, gas, teléfono, internet, entre otros. 
+
+'EL ARRENDATARIO' entregó con anterioridad a este acto a 'EL ARRENDADOR' la cantidad equivalente ${PRECIO_DEPOSITO} por concepto de deposito en garantía (previa presentación y entrega del recibo correspondiente) se devolverá a 'EL ARRENDATARIO' sin intereses si se actualizan los siguientes supuestos:
+
+a) Que se encuentre al corriente del pago de rentas con 'EL ARRENDADOR'; 
+b) Que entregue el inmueble completamente desocupado a 'EL ARRENDADOR' en el mismo estado en que lo recibió y con todos sus accesorios. Si 'EL ARRENDATARIO' causara algún daño o desperfecto en los accesorios de la finca arrendada el deposito se utilizará en su reparación; Es requisito indispensable para la devolución del deposito que 'EL ARRENDATARIO' entregue a 'EL ARRENDADOR' los comprobantes de luz, agua, teléfono, gas, cuotas de mantenimiento y demás servicios completamente pagados y finiquitados donde se exprese claramente por dichas compañías que no existen adeudos con ellas, cumpliéndose lo anterior, el depósito será devuelto, posteriores a la entrega del inmueble. 
+
+QUINTA.- DE LA FORMA DE PAGO
+
+'EL ARRENDADOR' concede por única ocasión a 'EL ARRENDATARIO' un plazo de gracia de (${PLAZO_GRACIA}) DIAS sin pago de renta, el cual transcurrirá a partir del día que se firme el 'ACTA DE ENTREGA' y concluirá (${PLAZO_GRACIA}) días  después, para que éste realice a su costa, a "${TIPO_INMUEBLE}", las adaptaciones que estime convenientes para el giro del mismo. El día que se firme el 'ACTA DE ENTREGA', 'EL ARRENDATARIO' se obliga a pagar a 'EL ARRENDADOR' por concepto de 'ANTICIPO', el monto correspondiente a la renta adelantada del periodo que cubra el primer mes de renta, el cual empezará a contar a partir del día que concluya el plazo de gracia.
+
+Con base al acuerdo anterior, el día que venza el periodo cubierto por el 'ANTICIPO', 'EL ARRENDATARIO' se obliga a pagar a 'EL ARRENDADOR' el monto correspondiente a la renta adelantada del periodo que cubra primer  mes de renta, por lo cual 'EL ARRENDATARIO' deberá pagar la siguiente renta un mes después y así sucesivamente, en los términos del presente contrato.
+
+El precio estipulado en la cláusula que antecede deberá ser pagado por adelantado ${FECHA_INICIO}, en el domicilio de "EL ARRENDADOR" Calle aser # 7 Col. Hermosa Provincia en Mezcales. Bahía de Banderas, Nayarit 
+
+SEXTA.- DEL AJUSTE AL MONTO DE LA RENTA
+
+Las partes acuerdan que el importe de la renta pactada en virtud de la cláusula cuarta del presente acuerdo de voluntades se ajustará cada 12 meses, contados a partir de la fecha de entrega d${TIPO_INMUEBLE} con un incremento del ${PORCENTAJE_AUMENTO} DEL INCREMENTO DE LA RENTA ANUAL
+
+SEPTIMA.- PROHIBICION DE RETENER RENTAS
+
+'EL ARRENDATARIO' no podrá retener la renta en ningún caso, bajo ningún título, ni por falta de compostura o reparaciones que 'EL ARRENDADOR' dejase de hacer, sino que pagará íntegramente la renta en la fecha y lugar estipulados.
+
+
+
+OCTAVA.- DE LA MORA EN EL PAGO DE LAS RENTAS
+
+Las partes acuerdan que en caso de incumplimiento o mora en el pago de rentas por parte de 'EL ARRENDATARIO' éste se obliga a pagar a 'EL ARRENDADOR', la cantidad de 10% (DIEZ por ciento) mensual sobre las rentas atrasadas y actualizadas por la inflación de conformidad con la Cláusula Sexta anterior. Los intereses a que se refiere este inciso se causarán por todo el tiempo en que dure la mora, y de ninguna manera se entenderá que el pago de los intereses moratorios pactados serán considerados como una liberación de la parte que incurrió en la mora del cumplimiento de cualquier obligación que sea a su cargo.
+
+NOVENA.- DE LA ENTREGA D${TIPO_INMUEBLE}
+
+'EL ARRENDATARIO' se compromete a recibir de 'EL ARRENDADOR' "${TIPO_INMUEBLE}" YA TERMINADO a la firma del 'ACTA DE ENTREGA', para que el primero realice las adaptaciones que considere pertinentes, dentro de un plazo de gracia pactado en la cláusula quinta del presente contrato.
+
+DECIMA.-DE LOS GASTOS QUE SE GENERAN SOBRE '${TIPO_INMUEBLE}'
+El pago del suministro de energía eléctrica, agua potable, servicio telefónico, etc. Correrán por cuenta de 'EL ARRENDATARIO', los cuales deberán ser pagados en las oficinas que para el efecto establezcan las determinadas entidades prestadoras de los servicios anteriormente mencionados y en el tiempo que éstas mismas le fijen para su pago.
+'EL ARRENDATARIO' se obliga a mantener en excelente condiciones físicas "${TIPO_INMUEBLE}" y a cumplir incondicionalmente con las obligaciones inherentes al arrendamiento,
+
+'EL ARRENDATARIO' al término del presente contrato deberá entregar el inmueble al corriente en el pago de todos los servicios y cuotas anteriormente señalados.
+
+DECIMA PRIMERA.- DEL ACCESO A '${TIPO_INMUEBLE}'
+'EL ARRENDATARIO' permitirá a 'EL ARRENDADOR' acceso a '${TIPO_INMUEBLE}', con el objeto de revisar las instalaciones, equipo y construcción. 'EL ARRENDADOR' solicitará por escrito con una semana de anticipación la inspección, salvo en caso de emergencia justificada.
+
+DECIMA SEGUNDA.- DE LOS DAÑOS A '${TIPO_INMUEBLE}'
+En caso de que '${TIPO_INMUEBLE}' sufriese daños por cualquier causa, o fuese destruido total o parcialmente por incendio o algún otro siniestro, 'EL ARRENDATARIO' tendrá obligación de restaurar o hacer cambios, reparaciones o mejoras en '${TIPO_INMUEBLE}'. Además se constituye en este acto como deudor directo a favor de 'EL ARRENDADOR' independientemente que se le pueda exigir a la aseguradora que responda según lo pactado en la cláusula décima quinta del presente contrato.
+
+DECIMA TERCERA.- DEL ANUNCIO DE '${TIPO_INMUEBLE}'
+
+Para el caso del anuncio que se colocará en '${TIPO_INMUEBLE}', éste forzosamente deberá ser aprobado por 'EL ARRENDADOR' previamente a la adquisición y colocación del mismo. En caso de que 'EL ARRENDATARIO' coloque un anuncio que no sea autorizado previamente por 'EL ARRENDADOR' se le solicitará la remoción de mismo, y en caso de no hacerlo, 'EL ARRENDADOR' procederá a retirarlo sin responsabilidad alguna y con cargo a 'EL ARRENDATARIO'.
+
+DECIMA CUARTA.- DE LAS MEJORAS A '${TIPO_INMUEBLE}'
+
+En caso de que 'EL ARRENDATARIO' realizare arreglos o remodelaciones en '${TIPO_INMUEBLE}', estas quedarán en beneficio de 'EL ARRENDADOR'
+
+'EL ARRENDATARIO' renuncia expresamente a los derechos de reembolso y de preferencia que establecen los artículos 1795 y 1796 del Código Civil vigente en el Estado de Nayarit.
+
+OBLIGACION DE NO HACER.- Por lo cual 'EL ARRENDATARIO' está conforme que no tendrá derecho a cobrar a 'EL ARRENDADOR' o a terceras personas cantidad alguna por traspaso o inversiones que hubiere realizado en '${TIPO_INMUEBLE}'.
+
+DECIMA QUINTA.- DEL SEGURO DE DAÑOS
+
+'EL ARRENDATARIO' se obliga a contratar por su cuenta y por todo el tiempo que ocupe ${TIPO_INMUEBLE}, un seguro a favor de 'EL ARRENDADOR' por la cantidad mínima de $ 100, 000.
+
+MILLÓN DE PESOS 00/100 M.N.), seguro que deberá cubrir responsabilidad civil por daños causados a terceros o en sus bienes, personas, dueños, arrendatarios, empleados, asociados, clientes y visitantes.
+
+'EL ARRENDATARIO' se hace responsable sobre cualquier daño o perjuicio de ${TIPO_INMUEBLE} que le ocasione como resultado de sus actividades o los productos que maneje, obligándose a contratar una póliza de seguro de paquete empresarial amparando las coberturas y debiendo cubrir daños ocurridos en caso de incendio, rotura accidental de tuberías.
+
+
+
+DECIMA SEXTA.- DE LAS SUBSTANCIAS EXPLOSIVAS
+Queda prohibido a 'EL ARRENDATARIO' guardar, conservar, o tener bajo cualquier título materiales explosivos o inflamables en '${TIPO_INMUEBLE}', en la inteligencia que será responsable de cualquier daño que se presente y que dañe a los mismos, por este motivo, aun en el caso de fuerza mayor o caso fortuito.
+
+DECIMA SEPTIMA.- DE LA TRANSMISION DE DERECHOS
+
+'EL ARRENDADOR' queda autorizado para ceder, dar en garantía o traspasar los derechos emanados de este contrato, si a sus intereses conviniere.
+
+'EL ARRENDATARIO' no podrá en ningún momento ceder, traspasar o subarrendar los derechos y obligaciones inherentes al presente contrato, si no es con el consentimiento expreso y por escrito de 'EL ARRENDADOR'.
+
+La violación por parte de 'EL ARRENDATARIO' de las prohibiciones anteriores será causa de rescisión de este contrato, además el acuerdo de cesión, traspaso o subarrendamiento, no tendrá efectos en la vida jurídica, cubriendo 'EL ARRENDATARIO' los daños y perjuicios que 'EL ARRENDADOR' sufriera.
+
+DECIMA OCTAVA.- DE LOS GASTOS
+'EL ARRENDATARIO' se obliga a pagar todos los honorarios y gastos de abogados, profesionistas y de cualquier persona, que tenga que utilizar 'EL ARRENDADOR' para hacer cumplir las obligaciones de 'EL ARRENDATARIO' derivadas del presente contrato. Asimismo queda obligado a pagar todos los impuestos, derechos y/o gastos que cause o llegara a causar el presente contrato.
+
+En caso de que el incumplimiento de 'EL ARRENDATARIO' diere lugar a trámites judiciales, éste pagará a 'EL ARRENDADOR' la cantidad correspondiente a dos meses de renta por concepto de penalización a causa de las pérdidas económicas que le generaría a 'EL ARRENDADOR' el transcurso del tiempo que tarde en resolverse la litis en los juzgados, independientemente de los gastos y honorarios a que se refiere el párrafo anterior; además la renta se incrementará en un 50% cincuenta por ciento de la renta fijada por cada seis meses que se esté tramitando el asunto en los tribunales.
+
+DECIMA NOVENA.- DE LAS OBLIGACIONES CON LA ADMINISTRACIÓN DEL INMUEBLE.
+
+'EL ARRENDATARIO' se obliga a sujetarse al Reglamento que rija el ARRENDADOR; así mismo pagará en forma directa a partir de la fecha de vencimiento del periodo de gracia estipulado en la Cláusula QUINTA, sin necesidad de que medie requerimiento de pago alguno por parte de 'EL ARRENDADOR' a 'EL ARRENDATARIO', así como se obliga al pago a las licencias y autorizaciones que se requieren para el funcionamiento del giro comercial de 'EL ARRENDATARIO' serán tramitadas por él y a su costa y bajo su propia responsabilidad. El incumplimiento de esta cláusula será causa de rescisión del contrato y del pago de los daños y perjuicios causados.
+
+
+
+
+
+VIGESIMA.- DE LA RESCISION DEL CONTRATO
+
+Será causa de rescisión de este contrato:
+
+a) Si 'EL ARRENDATARIO' dejare de pagar 1 uno o más de los pagos pactados.
+
+b) Si 'EL ARRENDATARIO' incumpliere en cualquiera de sus obligaciones previstas en el presente contrato.
+
+c) Si 'EL ARRENDATARIO' fuere emplazado a huelga por cualquier conflicto laboral y ese hecho afectase a '${TIPO_INMUEBLE}' ubicado en ${DIRECCION_INMUEBLE}.
+
+d) Si 'EL ARRENDATARIO' fuere declarado en concurso mercantil o que él presente la demanda o solicitud de concurso mercantil.
+
+e) Si 'EL ARRENDATARIO' violara el Reglamento del contrato.
+
+f) Cuando venza la fianza mediante la cual 'EL ARRENDATARIO' garantice sus obligaciones para con 'EL ARRENDADOR'.
+
+g) Si 'EL ARRENDATARIO' no renovara o contratara una fianza vigente para garantizar sus obligaciones con 'EL ARRENDADOR'.
+
+h) Cuando venza la Carta de Crédito mediante la cual 'EL ARRENDATARIO' garantice sus obligaciones para con 'EL ARRENDADOR'.
+
+i) Si 'EL ARRENDATARIO' no renovara o contratara una Carta de Crédito vigente para garantizar sus obligaciones con 'EL ARRENDADOR'.
+
+Para el caso de rescisión, 'EL ARRENDATARIO' se obliga a entregar a 'EL ARRENDADOR', '${TIPO_INMUEBLE}' en el mismo estado en que lo recibe.
+Si 'EL ARRENDATARIO' deseare ó diere lugar a la rescisión del presente contrato antes de la fecha de terminación, deberá dar aviso por escrito a 'EL ARRENDADOR' dos meses antes de dar por terminada la relación y pagará dos mensualidades por concepto de daños y perjuicios.
+En caso de que no hiciera la notificación con la debida anticipación, pagará el 50% cincuenta por ciento de las mensualidades pendientes de pago hasta la fecha de vencimiento del presente contrato.
+
+VIGESIMA PRIMERA.- DE LA FIANZA
+Los señores,quienes asistieron también a la celebración del presente contrato (en adelante 'LOS FIADORES') se obligan en favor de 'EL ARRENDADOR' constituyéndose como fiadores de
+'EL ARRENDATARIO' respecto de las obligaciones asumidas mediante este contrato, con renuncia expresa a los beneficios de orden, excusión y división y a los que se refieren los artículos 2182, 2185, 2186 y 2193 del Código Civil en vigente en el Estado de Nayarit, durando esta obligación hasta la devolución del inmueble completamente desocupado.
+ y declaran ser propietarios de la finca marcada con el ${DIRECCION_INMUEBLE}. Las obligaciones que asume EL ARRENDATARIO en este contrato pueden garantizarse mediante fianza expedida por compañía afianzadora autorizada para ello por la Comisión Nacional de Seguros y Fianzas; en ese caso, la fianza deberá permanecer vigente por todo el tiempo que dure el arrendamiento.
+
+VIGESIMA PRIMERA.- DE LA CARTA DE CRÉDITO
+Las obligaciones que asume EL ARRENDATARIO en este contrato pueden garantizarse mediante Carta de Crédito expedida por entidad financiera autorizada para ello por la Comisión Nacional Bancaria; en ese caso, la Carta de Crédito deberá permanecer vigente por todo el tiempo que dure el arrendamiento. Agregar datos de la Carta de Crédito.
+
+VIGÉSIMA SEGUNDA.- DE LOS DOMICILIOS
+
+Para todo lo referente a este contrato, las partes señalan como domicilios para recibir todo tipo de notificaciones y documentos, los que a continuación se detallan:
+
+EL ARRENDADOR: Calle Aser # 7 en Mezcales. Bahía de Banderas, Nayarit.
+
+EL ARRENDATARIO: ${DIRRECCION_ARRENDADOR}
+
+Cualquier cambio de domicilio que surja para las partes, deberá ser notificado a la otra parte, ya que de lo contrario las comunicaciones y notificaciones que se dirijan al domicilio aquí señalado surtirán los efectos legales que correspondan.
+
+VIGESIMA TERCERA.- DE LA LEGALIDAD
+
+Las partes contratantes manifiestan que en la presente celebración del contrato de arrendamiento del bien inmueble objeto del contrato, el precio pactado para el pago de la renta mensual es justo y no hay error, dolo, mala fe, intimidación o violencia, por lo que renuncian expresamente a invocar esos casos de nulidad.
+
+VIGÉSIMA CUARTA.- DE LA COMPETENCIA Y JURISDICCIÓN
+
+Para todo lo relativo a la interpretación y cumplimiento del presente contrato, las partes se someten a la jurisdicción y competencia de los tribunales de la ciudad de Bucerías, Municipio de Bahía de Banderas, Nayarit, renunciando a cualquier otro fuero presente o futuro que en razón de su domicilio pudiera corresponderles.
+
+Leído que fue por las partes el presente contrato y bien enteradas de su valor y fuerza legal, lo firman en el municipio de Bahía de Banderas, Nayarit,
+
+
+
+                                     'EL ARRENDADOR' 
+
+                              ${NOMBRE_ARRENDADOR}            
+
+
+
+                          ___________________________________                         
+
+
+
+                                    'EL ARRENDATARIO'  
+
+                            ${NOMBRE_ARRENDATARIO}  
+ 
+ 
+ 
+                         ___________________________________                                   
+
+
+
+                                     'LOS TESTIGOS' 
+
+
+
+         'TESTIGO 1'                                                   'TESTIGO 2'
+
+
+
+_________________________                         __________________________
+
+ 
