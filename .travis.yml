@@ -1,11 +1,11 @@
-language: python
-python:
+language: python #language that we are going to use in the project
+python: #version  of the language
   - "3.6"
 
-services:
+services: #service include in the project
   -docker
 
-before_script: pip install docker-compose
+before_script: pip install docker-compose 
 
-script:
+script: #script to execute test(test and exclude files(flake8))
   - docker-compose run app sh -c "python manage.py test && flake8"
