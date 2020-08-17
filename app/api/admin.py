@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext as _
 # Models
-from .models import Owner, Pet, Service, Contract, User
+from api import models
 
 
 class UserAdmin(BaseUserAdmin):
@@ -26,8 +26,8 @@ class UserAdmin(BaseUserAdmin):
 
 
 # Registers
-admin.site.register(User)
-admin.site.register(Owner)
-admin.site.register(Pet)
-admin.site.register(Service)
-admin.site.register(Contract)
+admin.site.register(models.User, UserAdmin)
+admin.site.register(models.Owner)
+admin.site.register(models.Pet)
+admin.site.register(models.Service)
+admin.site.register(models.Contract)
