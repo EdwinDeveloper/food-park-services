@@ -2,13 +2,17 @@
 from rest_framework import viewsets
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
-
+from rest_framework.views import APIView
 from .serializers import OwnerSerializer, PetSerializer, ServiceSerializer, \
                          ContractSerializer, EstateSerializer, \
                          PropertySerializer, \
                          LandLordSerializer, PaySerializer
 from .models import Owner, Pet, Service, Contract, Estate, \
                     Property, LandLord, Pay
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.parsers import JSONParser
+from .business.pdf import PDF
 
 
 # Create your views here.
@@ -70,3 +74,15 @@ class PayViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthenticated,)
     queryset = Pay.objects.all().order_by("FECHA")
     serializer_class = PaySerializer
+
+
+class ContractBuilderViewSet(APIView):
+    # authentication_classes = (TokenAuthentication,)
+    # permission_classes = (IsAuthenticated,)
+    parser_classes = [JSONParser]
+
+    def post(self, request, *args, **kw):
+        PDF.buildContract(self, request.data)
+        response = Response({'received data': request.data}, status=status.HTTP_201_CREATED)
+        return response
+

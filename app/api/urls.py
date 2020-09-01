@@ -5,7 +5,7 @@ from django.urls import path, include
 
 from .views import OwnerViewSet, PetViewSet, ServiceViewSet, \
                    ContractViewSet, EstateViewSet, PropertyViewSet, \
-                   LandLordViewSet, PayViewSet
+                   LandLordViewSet, PayViewSet, ContractBuilderViewSet
 
 
 router = routers.DefaultRouter()
@@ -21,5 +21,6 @@ router.register(r"pays", PayViewSet)
 urlpatterns = [
     path("", include(router.urls)),
     path('api-auth/',
-         include('rest_framework.urls', namespace="rest_framework"))
+        include('rest_framework.urls', namespace="rest_framework")),
+    path('new/', ContractBuilderViewSet.as_view(), name='')
 ]

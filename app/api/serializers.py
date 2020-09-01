@@ -28,18 +28,19 @@ class ServiceSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class EstateSerializer(serializers.ModelSerializer):
-    """Estate model serializer"""
-    class Meta:
-        model = Estate
-        fields = "__all__"
-
-
 class PropertySerializer(serializers.ModelSerializer):
     """Property model serializer"""
     class Meta:
         model = Property
         fields = "__all__"
+
+
+class EstateSerializer(serializers.ModelSerializer):
+    """Estate model serializer"""
+    properties = PropertySerializer(many=True)
+    class Meta:
+        model = Estate
+        fields = ("CODE", "ADDRESS", "PUBLIC_DEED", "properties")
 
 
 class LandLordSerializer(serializers.ModelSerializer):
