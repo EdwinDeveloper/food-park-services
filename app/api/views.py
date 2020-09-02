@@ -82,7 +82,16 @@ class ContractBuilderViewSet(APIView):
     parser_classes = [JSONParser]
 
     def post(self, request, *args, **kw):
-        PDF.buildContract(self, request.data)
-        response = Response({'received data': request.data}, status=status.HTTP_201_CREATED)
+        if PDF.buildContract(self, request.data):
+            serializer = ContractSerializer(data=request.data)
+            if serializer.is_valid():
+                serializer.create(request.data)
+                response = Response({'Contrato realizado': request.data}, status=status.HTTP_201_CREATED)
+                print("saving contract post")
+            else:
+                response = Response({'Error': 'Información no valida'}, status=status.HTTP_400_BAD_REQUEST)
+                print("informacion no valida")
+        else:
+            response = Response({'Error': "Contrato no realizado"}, status=status.HTTP_400_BAD_REQUEST)
         return response
 

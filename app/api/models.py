@@ -103,7 +103,8 @@ class Property(models.Model):
     PRICE = models.FloatField()
     DEPOSIT = models.FloatField()
     PERCENT_INCREASE = models.FloatField()
-    type = models.CharField(max_length=50)
+    STATUS = models.CharField(max_length=1)
+    type = models.CharField(max_length=50, null=False)
 
     # Relations
     estate = models.ForeignKey(Estate,
@@ -152,27 +153,25 @@ class Contract(models.Model):
     NOMBRE_ARRENDADOR = models.CharField(max_length=255)
     NOMBRE_ARRENDATARIO = models.CharField(max_length=255)
 
-    NUMERO_ESCRITURA = ""
-    TIPO_INMUEBLE = ""
-    DIRECCION_INMUEBLE = ""
+    # NUMERO_ESCRITURA = ""
+    # TIPO_INMUEBLE = ""
+    # DIRECCION_INMUEBLE = ""
 
     SERVICIO_A_OFRECER = models.CharField(max_length=255)
 
-    FECHA_INICIO = ""
-    FECHA_FINAL = ""
-
-    # PRECIO_INMUEBLE = models.CharField(max_length=5)
+    FECHA_INICIO = models.DateTimeField(default='2021-09-02 16:19:25', null=True)
+    FECHA_FINAL = models.DateTimeField(default='2021-09-02 16:19:25', null=True)
     DEPARTAMENTO = models.ForeignKey(Property,
                                      related_name="contracts",
                                      blank=True,
                                      null=True,
                                      on_delete=models.CASCADE)
-    PRECIO_DEPOSITO = models.CharField(max_length=5)
+    PRECIO_INMUEBLE = models.FloatField(null=False)
+    PRECIO_DEPOSITO = models.FloatField(null=False)
+    MONTO_PENDIENTE = models.FloatField(null=False)
+    PORCENTAJE_AUMENTO = models.FloatField(null=False)
     PLAZO_GRACIA = models.CharField(max_length=1)
-    PORCENTAJE_AUMENTO = models.CharField(max_length=3)
     DIRRECCION_ARRENDADOR = models.CharField(max_length=500)
-
-    # buildContract()
 
     def __str__(self):
         """Return Arrendatario nombre"""

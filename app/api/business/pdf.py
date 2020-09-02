@@ -1,40 +1,32 @@
 from fpdf import FPDF
 from datetime import datetime
 import os
-from rest_framework.views import APIView
+from .toEmail import Email
 
 
-class PDF(APIView):
+class PDF:
 
-    def buildContract(self, data, *args, **kw):
+    def __init__(self):
+        pass
 
-        pdf = FPDF(format='letter', unit='in')
-        pdf.l_margin = pdf.l_margin*2.8
-        pdf.r_margin = pdf.r_margin*2.8
-        pdf.t_margin = pdf.t_margin*1.5
-        pdf.b_margin = pdf.b_margin*1.5
-        pdf.add_page()
+    def fecha(self, tipo):
+        now = datetime.now()
+        months = ("Enero", "Febrero", "Marzo", "Abri", "Mayo",
+                "Junio", "Julio", "Agosto", "Septiembre",
+                "Octubre", "Noviembre", "Diciembre")
+        if tipo == "inicio":
+            return 'el día {} de {} del {}'.format(now.day, months[now.month - 1], now.year)
+        if tipo == "final":
+            return 'el día {} de {} del {}'.format(now.day, months[now.month - 1], now.year + 1)
 
-        epw = pdf.w - pdf.l_margin - pdf.r_margin
-        # eph = pdf.h - pdf.t_margin - pdf.b_margin
-
-        pdf.set_font('Times', '', 14)
-        th = 0.20
-
-        pdf.ln(2*th)
+    def text(self, data):
 
         textoContrato = """"""
-
         with open(os.path.join(os.path.dirname(os.path.dirname(__file__)),
                 'business/contrato.txt')) as file_in:
             # lines = []
             for line in file_in:
                 textoContrato = textoContrato + line
-
-        now = datetime.now()
-        months = ("Enero", "Febrero", "Marzo", "Abri", "Mayo",
-                "Junio", "Julio", "Agosto", "Septiembre",
-                "Octubre", "Noviembre", "Diciembre")
 
         # NOMBRE_ARRENDADOR_REMPLAZO
         NRR = \
@@ -63,21 +55,19 @@ class PDF(APIView):
         # FECHA_INICIO_REMPLAZO
         FIR = \
             SAOR.replace('${FECHA_INICIO}',
-                        'el día {} de {} del {}'
-                        .format(now.day, months[now.month - 1], now.year))
+                        PDF.fecha(self, "inicio"))
         # FECHA_FINAL_REMPLAZO
         FFR = \
             FIR.replace('${FECHA_FINAL}',
-                        'el día {} de {} del {}'
-                        .format(now.day, months[now.month - 1], now.year + 1))
+                        PDF.fecha(self, "final"))
         # PRECIO_INMUEBLE_REMPLAZO
         PIR = \
             FFR.replace('${PRECIO_INMUEBLE}',
-                        data['PRECIO_INMUEBLE'])
+                        str(data['PRECIO_INMUEBLE']))
         # PRECIO_DEPOSITO_REMPLAZO
         PDR = \
             PIR.replace('${PRECIO_DEPOSITO}',
-                        data['PRECIO_DEPOSITO'])
+                        str(data['PRECIO_DEPOSITO']))
         # PLAZO_GRACIA_REMPLAZO
         PGR = \
             PDR.replace('${PLAZO_GRACIA}',
@@ -85,11 +75,31 @@ class PDF(APIView):
         # PORCENTAJE_AUMENTO_REMPLAZO
         PAR = \
             PGR.replace('${PORCENTAJE_AUMENTO}',
-                        data['PORCENTAJE_AUMENTO'])
+                        str(data['PORCENTAJE_AUMENTO'])+"%")
         # DIRRECCION_ARRENDADOR_REMPLAZO
         DAR = \
             PAR.replace('${DIRRECCION_ARRENDADOR}',
                         data['DIRRECCION_ARRENDADOR'])
+        return DAR
 
-        pdf.multi_cell(epw, th, DAR)
-        pdf.output('contrato_arrendamiento.pdf', 'F')
+    def buildContract(self, data, *args, **kw):
+        try:
+            pdf = FPDF(format='letter', unit='in')
+            pdf.l_margin = pdf.l_margin*2.8
+            pdf.r_margin = pdf.r_margin*2.8
+            pdf.t_margin = pdf.t_margin*1.5
+            pdf.b_margin = pdf.b_margin*1.5
+            pdf.add_page()
+            # eph = pdf.h - pdf.t_margin - pdf.b_margin
+            pdf.set_font('Times', '', 14)
+            th = 0.20
+            pdf.ln(2*th)
+            epw = pdf.w - pdf.l_margin - pdf.r_margin
+            pdf.multi_cell(epw, th, PDF.text(self, data))
+            pdf.output('api/business/contrato_arrendamiento.pdf', 'F')
+            # Contract.objects.save(cn)
+            # Email.sendEmail(self, data)
+            return True
+        except Exception as error:
+            print(error)
+            return False
