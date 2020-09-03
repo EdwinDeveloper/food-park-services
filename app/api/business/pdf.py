@@ -97,7 +97,6 @@ class PDF:
             epw = pdf.w - pdf.l_margin - pdf.r_margin
             pdf.multi_cell(epw, th, PDF.text(self, data))
             pdf.output('api/business/contrato_arrendamiento.pdf', 'F')
-            # Contract.objects.save(cn)
             # Email.sendEmail(self, data)
             return True
         except Exception as error:

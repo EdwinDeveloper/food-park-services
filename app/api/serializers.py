@@ -37,10 +37,18 @@ class PropertySerializer(serializers.ModelSerializer):
 
 class EstateSerializer(serializers.ModelSerializer):
     """Estate model serializer"""
-    # properties = PropertySerializer(many=True)
+    properties = PropertySerializer(many=True)
     class Meta:
         model = Estate
-        fields = "__all__"
+        fields = ("CODE", "ADDRESS", "PUBLIC_DEED", "properties")
+
+    def create(self, validated_data):
+        estate = Estate()
+        estate.CODE = validated_data['CODE']
+        estate.ADDRESS = validated_data['CODE']
+        estate.PUBLIC_DEED = validated_data['CODE']
+        estate.save()
+        return estate
 
 
 class LandLordSerializer(serializers.ModelSerializer):

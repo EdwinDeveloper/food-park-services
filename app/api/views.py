@@ -82,16 +82,27 @@ class ContractBuilderViewSet(APIView):
     parser_classes = [JSONParser]
 
     def post(self, request, *args, **kw):
-        if PDF.buildContract(self, request.data):
-            serializer = ContractSerializer(data=request.data)
-            if serializer.is_valid():
-                serializer.create(request.data)
-                response = Response({'Contrato realizado': request.data}, status=status.HTTP_201_CREATED)
-                print("saving contract post")
+        propertie = Property.objects.get(id=request.data['DEPARTAMENTO'])
+        if propertie:
+            if propertie.STATUS == "0":
+                serializer = ContractSerializer(data=request.data)
+                if serializer.is_valid():
+                    if PDF.buildContract(self, request.data):
+                        serializer.create(request.data)
+                        propertie.STATUS = "1"
+                        propertie.save()
+                        response = Response({'Contrato realizado': request.data}, status=status.HTTP_201_CREATED)
+                        print("saving contract post")
+                    else:
+                        response = Response({'Error': 'Error de creacion de contrato'}, status=status.HTTP_400_BAD_REQUEST)
+                        print("Error de creacion de contrato")
+                else:
+                    print("Informacion de entrada no valida")
+                    response = Response({'Error': 'Informacion de entrada no valida'}, status=status.HTTP_400_BAD_REQUEST)
             else:
-                response = Response({'Error': 'Información no valida'}, status=status.HTTP_400_BAD_REQUEST)
-                print("informacion no valida")
+                print("Inmueble ya asignado en otro contrato")
+                response = Response({'Error': 'Inmueble ya asignado en otro contrato'}, status=status.HTTP_400_BAD_REQUEST)
         else:
-            response = Response({'Error': "Contrato no realizado"}, status=status.HTTP_400_BAD_REQUEST)
+            response = Response({'Error': "Inmueble inexistente"}, status=status.HTTP_400_BAD_REQUEST)
         return response
 

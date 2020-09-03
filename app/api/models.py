@@ -87,9 +87,9 @@ class Service(models.Model):
 
 class Estate(models.Model):
     """Estate model"""
-    CODE = models.CharField(max_length=100)
+    CODE = models.CharField(max_length=100, unique=True)
     ADDRESS = models.CharField(max_length=500)
-    PUBLIC_DEED = models.CharField(max_length=200)
+    PUBLIC_DEED = models.CharField(max_length=200, unique=True)
 
     def __str__(self):
         """Return Public deed"""
