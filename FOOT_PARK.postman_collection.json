@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "2206b9dc-6679-4d8b-ac9b-6556cd12fef4",
+		"name": "FOOT_PARK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NEW CONTRACT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"NOMBRE_ARRENDADOR\":\"Carlos Edwin Gonzales\",\n    \"NOMBRE_ARRENDATARIO\":\"Roberto Israel Perez Ochoa\",\n    \"NUMERO_ESCRITURA\":\"\",\n    \"TIPO_INMUEBLE\":\"LOCALES\",\n    \"DIRECCION_INMUEBLE\":\"AV. Tepic Vallarta #32\",\n    \"SERVICIO_A_OFRECER\":\"RENTA LOCAL\",\n    \"PRECIO_INMUEBLE\":6000,\n    \"PRECIO_DEPOSITO\":6500,\n    \"MONTO_ADELANTO\":4000,\n    \"MONTO_PENDIENTE\":0,\n    \"PLAZO_GRACIA\":\"2\",\n    \"PORCENTAJE_AUMENTO\":10,\n    \"DIRRECCION_ARRENDADOR\":\"Federalismo sur 341 cp: 44100\",\n    \"DEPARTAMENTO\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/new/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"new",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
