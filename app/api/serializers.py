@@ -45,8 +45,8 @@ class EstateSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         estate = Estate()
         estate.CODE = validated_data['CODE']
-        estate.ADDRESS = validated_data['CODE']
-        estate.PUBLIC_DEED = validated_data['CODE']
+        estate.ADDRESS = validated_data['ADDRESS']
+        estate.PUBLIC_DEED = validated_data['PUBLIC_DEED']
         estate.save()
         return estate
 
@@ -88,7 +88,7 @@ class ContractSerializer(serializers.ModelSerializer):
         cn.FECHA_FINAL = ContractSerializer.isofecha(self, 'final')
         cn.PRECIO_INMUEBLE = validated_data['PRECIO_INMUEBLE']
         cn.PRECIO_DEPOSITO = validated_data['PRECIO_DEPOSITO']
-        cn.MONTO_PENDIENTE = validated_data['PRECIO_INMUEBLE'] + validated_data['PRECIO_DEPOSITO'] - validated_data['MONTO_ADELANTO']
+        cn.MONTO_PENDIENTE = 0#validated_data['PRECIO_INMUEBLE'] + validated_data['PRECIO_DEPOSITO'] - validated_data['MONTO_ADELANTO']
         cn.PLAZO_GRACIA = validated_data['PLAZO_GRACIA']
         cn.PORCENTAJE_AUMENTO = validated_data['PORCENTAJE_AUMENTO']
         cn.DIRRECCION_ARRENDADOR = validated_data['DIRRECCION_ARRENDADOR']

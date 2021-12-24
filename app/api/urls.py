@@ -10,8 +10,8 @@ from .views import OwnerViewSet, PetViewSet, ServiceViewSet, \
 
 router = routers.DefaultRouter()
 router.register(r"owners", OwnerViewSet)
-router.register(r"pets", PetViewSet)
-router.register(r"services", ServiceViewSet)
+#router.register(r"pets", PetViewSet)
+#router.register(r"services", ServiceViewSet)
 router.register(r"contracts", ContractViewSet)
 router.register(r"estates", EstateViewSet)
 router.register(r"properties", PropertyViewSet)

@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2206b9dc-6679-4d8b-ac9b-6556cd12fef4",
+		"_postman_id": "7ccf9dca-c594-484b-b0e5-6e2c24c22f35",
 		"name": "FOOT_PARK",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -12,13 +12,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "",
+						"value": "{{PARK-TOKEN}}",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"NOMBRE_ARRENDADOR\":\"Carlos Edwin Gonzales\",\n    \"NOMBRE_ARRENDATARIO\":\"Roberto Israel Perez Ochoa\",\n    \"NUMERO_ESCRITURA\":\"\",\n    \"TIPO_INMUEBLE\":\"LOCALES\",\n    \"DIRECCION_INMUEBLE\":\"AV. Tepic Vallarta #32\",\n    \"SERVICIO_A_OFRECER\":\"RENTA LOCAL\",\n    \"PRECIO_INMUEBLE\":6000,\n    \"PRECIO_DEPOSITO\":6500,\n    \"MONTO_ADELANTO\":4000,\n    \"MONTO_PENDIENTE\":0,\n    \"PLAZO_GRACIA\":\"2\",\n    \"PORCENTAJE_AUMENTO\":10,\n    \"DIRRECCION_ARRENDADOR\":\"Federalismo sur 341 cp: 44100\",\n    \"DEPARTAMENTO\":1\n}",
+					"raw": "{\n    \"DEPARTAMENTO\": 2,\n    \"NOMBRE_ARRENDADOR\":\"EDWIN GIOVANNI PEREZ ROBLES\",\n    \"NOMBRE_ARRENDATARIO\":\"SANTIAGO PEREZ ONTIVEROS\",\n    \"SERVICIO_A_OFRECER\":\"RENTA LOCAL\",\n    \"PRECIO_INMUEBLE\":0,\n    \"PRECIO_DEPOSITO\":0,\n    \"MONTO_PENDIENTE\":0,\n    \"PLAZO_GRACIA\":\"2\",\n    \"PORCENTAJE_AUMENTO\":0,\n    \"DIRRECCION_ARRENDADOR\":\"Aser 7 Hermosa provincia\",\n    \"NUMERO_ESCRITURA\":\"\",\n    \"TIPO_INMUEBLE\":\"LOCAL\",\n    \"DIRECCION_INMUEBLE\":\"Netzahualcoyotl S/N\",\n    \"MONTO_ADELANTO\":0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -26,13 +26,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/new/",
+					"raw": "http://localhost:8000/new/",
 					"protocol": "http",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
@@ -42,7 +39,217 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "NEW OWNER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{PARK-TOKEN}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"EDWIN GIOVANNI\",\n    \"last_name\": \"PEREZ ROBLES\",\n    \"address\": \"ASER #7 COL. HERMOSA PROVINCIA, MEZCALEZ NAYARIT\",\n    \"phone\": \"3221812552\",\n    \"email\": \"EDWINDEVELOPER@OUTLOOK.COM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/owners/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"owners",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NEW LANDLORD",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{PARK-TOKEN}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"NAME_LANDLORD\": \"EDWIN GIOVANNI PEREZ ROBLES\",\n    \"ADDRESS\": \"ASER 7 HERMOSA PROVINCIA CP: 63738\",\n    \"CURP\": \"PERE930102HJCRBD0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/landlords/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"landlords",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NEW PROPERTIE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{PARK-TOKEN}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"CODE\": \"SALON\",\n    \"DESCRIPTION\": \"SALON EVENTOS\",\n    \"PRICE\": 0,\n    \"DEPOSIT\": 0,\n    \"PERCENT_INCREASE\": 0,\n    \"STATUS\": 1,\n    \"type\": \"LOCAL\",\n    \"estate\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/properties/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"properties",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NEW ESTATE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{PARK-TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"CODE\": \"SALON EVENTOS\",\n    \"ADDRESS\": \"NEZAHUALCOYOTL\",\n    \"PUBLIC_DEED\": \"N/A\",\n    \"properties\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/estates/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"estates",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NEW TOKEN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cd30154a356e1bb721e6e4cfcbe6c038d692cf6a",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"edwindeveloper@outlook.com\",\n    \"password\":\"1234567890\",\n    \"name\":\"edwindeveloper\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/token/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NEW SUPER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"edwindeveloper@outlook.com\",\n    \"password\":\"1234567890\",\n    \"name\":\"edwindeveloper\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/create/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }

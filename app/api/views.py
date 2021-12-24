@@ -18,8 +18,8 @@ from .business.pdf import PDF
 # Create your views here.
 class OwnerViewSet(viewsets.ModelViewSet):
     """Owner view set"""
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    #authentication_classes = (TokenAuthentication,)
+    #permission_classes = (IsAuthenticated,)
     queryset = Owner.objects.all().order_by("first_name")
     serializer_class = OwnerSerializer
 
@@ -42,36 +42,36 @@ class ServiceViewSet(viewsets.ModelViewSet):
 
 class ContractViewSet(viewsets.ModelViewSet):
     """Contract view set"""
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    #authentication_classes = (TokenAuthentication,)
+    #permission_classes = (IsAuthenticated,)
     queryset = Contract.objects.all().order_by("NOMBRE_ARRENDATARIO")
     serializer_class = ContractSerializer
 
 
 class EstateViewSet(viewsets.ModelViewSet):
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    #authentication_classes = (TokenAuthentication,)
+    #permission_classes = (IsAuthenticated,)
     queryset = Estate.objects.all().order_by("CODE")
     serializer_class = EstateSerializer
 
 
 class PropertyViewSet(viewsets.ModelViewSet):
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    #authentication_classes = (TokenAuthentication,)
+    #permission_classes = (IsAuthenticated,)
     queryset = Property.objects.all().order_by("CODE")
     serializer_class = PropertySerializer
 
 
 class LandLordViewSet(viewsets.ModelViewSet):
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    #authentication_classes = (TokenAuthentication,)
+    #permission_classes = (IsAuthenticated,)
     queryset = LandLord.objects.all().order_by("NAME_LANDLORD")
     serializer_class = LandLordSerializer
 
 
 class PayViewSet(viewsets.ModelViewSet):
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (IsAuthenticated,)
+    #authentication_classes = (TokenAuthentication,)
+    #permission_classes = (IsAuthenticated,)
     queryset = Pay.objects.all().order_by("FECHA")
     serializer_class = PaySerializer
 
@@ -86,6 +86,7 @@ class ContractBuilderViewSet(APIView):
         if propertie:
             if propertie.STATUS == "0":
                 serializer = ContractSerializer(data=request.data)
+            
                 if serializer.is_valid():
                     if PDF.buildContract(self, request.data):
                         serializer.create(request.data)

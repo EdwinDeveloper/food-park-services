@@ -16,10 +16,10 @@ class PDF:
                 "Octubre", "Noviembre", "Diciembre")
         if tipo == "inicio":
             #return 'el día {} de {} del {}'.format(now.day, months[now.month - 1], now.year)
-            return 'el día 10 de diciembre 2020'
+            return 'el día 01 de enero 2022'
         if tipo == "final":
             #return 'el día {} de {} del {}'.format(now.day, months[now.month - 1], now.year + 1)
-            return 'el 10 de diciembre del 2021'
+            return 'el 01 de enero del 2024'
 
     def text(self, data):
 

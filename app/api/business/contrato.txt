@@ -77,7 +77,7 @@ El precio estipulado en la cláusula que antecede deberá ser pagado por adelant
 
 SEXTA.- DEL AJUSTE AL MONTO DE LA RENTA
 
-Las partes acuerdan que el importe de la renta pactada en virtud de la cláusula cuarta del presente acuerdo de voluntades se ajustará cada 12 meses, contados a partir de la fecha de entrega d${TIPO_INMUEBLE} con un incremento del ${PORCENTAJE_AUMENTO} DEL INCREMENTO DE LA RENTA ANUAL
+Las partes acuerdan que el importe de la renta pactada en virtud de la cláusula cuarta del presente acuerdo de voluntades se ajustará cada 12 meses, contados a partir de la fecha de entrega del ${TIPO_INMUEBLE} con un incremento del ${PORCENTAJE_AUMENTO} DEL INCREMENTO DE LA RENTA ANUAL
 
 SEPTIMA.- PROHIBICION DE RETENER RENTAS
 
