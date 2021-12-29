@@ -8,11 +8,11 @@ Declara 'EL ARRENDADOR':
 
 I. Ser una sociedad mercantil debidamente constituida conforme a las leyes mexicanas, según consta en escritura pública en Tepic, Nayarit
 
-II. Que se encuentra inscrita ante el Registro Federal de Contribuyentes bajo la clave peos730725
+II. Que se encuentra inscrita ante el Registro Federal de Contribuyentes bajo la clave PERE930102A40
 
 III. Que su representante cuenta con la capacidad legal necesaria para obligar a su representado en los términos del presente contrato y que a la fecha no le ha sido revocado ni limitado su nombramiento.
 
-IV. Que cuenta con la facultad suficiente para conceder el uso o goce del inmueble destinado a ${TIPO_INMUEBLE}, marcado con el número 32 ubicado en Avenida Tepic Puerto Vallarta,  Mezcales Bahía de Banderas, Nayarit. (En lo sucesivo '${TIPO_INMUEBLE}' Que tiene interés en celebrar el presente contrato con 'EL ARRENDATARIO', con el objeto de dar en arrendamiento ${TIPO_INMUEBLE} descrito con anterioridad.
+IV. Que cuenta con la facultad suficiente para conceder el uso o goce del inmueble destinado a ${TIPO_INMUEBLE}, marcado con el número S/N ubicado en Netzahualcoyotl,  Mezcales Bahía de Banderas, Nayarit. (En lo sucesivo '${TIPO_INMUEBLE}' Que tiene interés en celebrar el presente contrato con 'EL ARRENDATARIO', con el objeto de dar en arrendamiento ${TIPO_INMUEBLE} descrito con anterioridad.
 
 Declara 'EL ARRENDATARIO':
 
@@ -40,7 +40,7 @@ C L Á U S U L A S
 
 PRIMERA.- DEL OBJETO DEL CONTRATO.
 
-'EL ARRENDADOR' otorga y entrega en arrendamiento a 'EL ARRENDATARIO' ${TIPO_INMUEBLE} marcado con ${DIRECCION_INMUEBLE}. Se considera que dicho ${TIPO_INMUEBLE} cuenta con una superficie de 48 metros cuadrados.
+'EL ARRENDADOR' otorga y entrega en arrendamiento a 'EL ARRENDATARIO' ${TIPO_INMUEBLE} marcado con ${DIRECCION_INMUEBLE}. Se considera que dicho ${TIPO_INMUEBLE} cuenta con una superficie de 800 metros cuadrados.
 
 'EL ARRENDATARIO' recibe '${TIPO_INMUEBLE}' reconociendo que se encuentra en perfectas condiciones, habiendo verificado que todas sus instalaciones funcionan correctamente a su entera y total satisfacción.
 
@@ -52,7 +52,7 @@ TERCERA.- DE LA DURACIÓN
 
 El contrato tendrá una duración especifica obligatorios para ambas partes comenzando a surtir efecto el día de la firma del 'ACTA DE ENTREGA', la cual se contempla se firme ${FECHA_INICIO}, concluyendo el contrato ${FECHA_FINAL} día en que 'EL ARRENDATARIO' se obliga a entregar a 'EL ARRENDADOR' la posesión material y jurídica de '${TIPO_INMUEBLE}' objeto de este contrato en el mismo buen estado en que lo recibe, junto con sus frutos, mejoras y accesorios.
 
-'EL ARRENDATARIO' se obliga a pagar a 'EL ARRENDADOR' una cantidad mensual igual a la pactada en la cláusula cuarta del presente contrato más una pena convencional del 99.99% de incremento por concepto de renta mensual, si a la fecha de terminación del presente contrato, no se hubiere celebrado un nuevo contrato de arrendamiento, y 'EL ARRENDATARIO' no hubiere desocupado y entregado la posesión material y jurídica de '${TIPO_INMUEBLE}' a 'EL ARRENDADOR'; esto es, la renta que deberá pagar durante los meses que no desocupe '${TIPO_INMUEBLE}' será de un 99.99% más a la establecida en el último contrato, sin menoscabo de que 'EL ARRENDADOR' demande la declaración de terminación del Contrato y la desocupación correspondiente.
+'EL ARRENDATARIO' se obliga a pagar a 'EL ARRENDADOR' una cantidad mensual igual a la pactada en la cláusula cuarta del presente contrato más una pena convencional del 0% de incremento por concepto de renta mensual, si a la fecha de terminación del presente contrato, no se hubiere celebrado un nuevo contrato de arrendamiento, y 'EL ARRENDATARIO' no hubiere desocupado y entregado la posesión material y jurídica de '${TIPO_INMUEBLE}' a 'EL ARRENDADOR'; esto es, la renta que deberá pagar durante los meses que no desocupe '${TIPO_INMUEBLE}' será de un 0% más a la establecida en el último contrato, sin menoscabo de que 'EL ARRENDADOR' demande la declaración de terminación del Contrato y la desocupación correspondiente.
 
 En caso de que 'EL ARRENDATARIO' no celebre un nuevo contrato de arrendamiento, le permitirá a 'EL ARRENDADOR' colocar anuncios o letreros donde se ponga a disposición '${TIPO_INMUEBLE}'.
 
@@ -89,7 +89,7 @@ OCTAVA.- DE LA MORA EN EL PAGO DE LAS RENTAS
 
 Las partes acuerdan que en caso de incumplimiento o mora en el pago de rentas por parte de 'EL ARRENDATARIO' éste se obliga a pagar a 'EL ARRENDADOR', la cantidad de 10% (DIEZ por ciento) mensual sobre las rentas atrasadas y actualizadas por la inflación de conformidad con la Cláusula Sexta anterior. Los intereses a que se refiere este inciso se causarán por todo el tiempo en que dure la mora, y de ninguna manera se entenderá que el pago de los intereses moratorios pactados serán considerados como una liberación de la parte que incurrió en la mora del cumplimiento de cualquier obligación que sea a su cargo.
 
-NOVENA.- DE LA ENTREGA D${TIPO_INMUEBLE}
+NOVENA.- DE LA ENTREGA DE ${TIPO_INMUEBLE}
 
 'EL ARRENDATARIO' se compromete a recibir de 'EL ARRENDADOR' "${TIPO_INMUEBLE}" YA TERMINADO a la firma del 'ACTA DE ENTREGA', para que el primero realice las adaptaciones que considere pertinentes, dentro de un plazo de gracia pactado en la cláusula quinta del presente contrato.
 
@@ -205,7 +205,12 @@ Para todo lo relativo a la interpretación y cumplimiento del presente contrato,
 
 Leído que fue por las partes el presente contrato y bien enteradas de su valor y fuerza legal, lo firman en el municipio de Bahía de Banderas, Nayarit,
 
-NOTA : ESTE CONTRATO NO SERA RENOVADO, POR LO TANTO EL INMUEBLE DEBE SER DE DESOCUPADO EN LA FECHA DE FINALIZACION DEL DOCUMENTO MENCIONADO
+VIGÉSIMA QUINTA.- ACCESO Y COMPETENCIAS DE FAMILIARES
+
+Los accesos y competencias de KASSANDRA RUBÍ PÉREZ ROBLES y JULIA ROBLES, EL ARRENDADOR se compromete a respetar el espacio para la instalación de puntos de venta acordados sea para venta de productos u
+oferta de servicios, sin afectar el espacio de las areas comunes
+
+
 
 
 

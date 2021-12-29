@@ -19,7 +19,7 @@ class PDF:
             return 'el día 01 de enero 2022'
         if tipo == "final":
             #return 'el día {} de {} del {}'.format(now.day, months[now.month - 1], now.year + 1)
-            return 'el 01 de enero del 2024'
+            return 'el 01 de enero del 2027'
 
     def text(self, data):
 
